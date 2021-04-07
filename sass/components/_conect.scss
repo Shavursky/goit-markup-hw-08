@@ -1,0 +1,37 @@
+.conect {
+    margin-left: 86px;
+}
+
+.conect-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-white);
+    margin-bottom: 21px;
+}
+
+.social-conect {
+    fill: var(--accent-color-white);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.social-link-conect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+    &:hover .social-conect,
+    &:focus .social-conect {
+        fill: var(--accent-color-white);
+    }
+}

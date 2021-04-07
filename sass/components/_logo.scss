@@ -1,0 +1,17 @@
+.logo {
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-black);
+    display: block;
+}
+
+.logo_mark {
+    color: var(--accent-color);
+}
+
+.footer-section .logo {
+    color: var(--accent-color-white);
+}

@@ -1,0 +1,32 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-list__icon {
+    fill: var(--icon-grey);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+    &:hover .social-list__icon,
+    &:focus .social-list__icon {
+        fill: var(--accent-color-white);
+    }
+}
+
+.social-list__item {
+    margin-right: 10px;
+}

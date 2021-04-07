@@ -1,0 +1,53 @@
+.form-footer {
+    margin-left: auto;
+}
+
+.footer-form-modal {
+    display: flex;
+}
+
+.form-title-footer {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-white);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.modal-footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: #2F303A;
+    color: var(--accent-color-white);
+}
+
+.form-footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--accent-color-white);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.social-conect-icon {
+    fill: var(--accent-color-white);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    margin-left: 10px;
+}

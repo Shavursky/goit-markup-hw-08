@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-header">
+                <a href="/" class="logo link"><span class="logo_mark">Web</span>Studio</a>
+                <ul class="navigation list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link navigation__link_current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__mail link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon-convert" width="16px" height="12px">
+                            <use href="./image/sprite.svg#icon-convert"></use>                        
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__tel link" href="tel:+380961111111">
+                        <svg class="contacts__icon-smartphone" width="10px" height="16px">
+                           <use href="./image/sprite.svg#icon-smartphone"></use>                            
+                       </svg> +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-portfolio">
+        <section class="portfolio-section">
+            <div class="container">
+                <ul class="list portfolio-list">
+                    <li class="portfolio-list__item">
+                        <button class="portfolio-list__button" type="button">Все</button>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <button class="portfolio-list__button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <button class="portfolio-list__button" type="button">Приложения</button>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <button class="portfolio-list__button" type="button">Дизайн</button>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <button class="portfolio-list__button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="list portfolio-modal">
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt1.jpg" alt="Технокряк" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                                <p class="portfolio-modal__text">
+                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Технокряк</h1>
+                                <p class="portfolio-modal__description">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Постер New Orlean vs Golden Star</h1>
+                                <p class="portfolio-modal__description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Ресторан Seafood</h1>
+                                <p class="portfolio-modal__description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt4.jpg" alt="Prime" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Проект Prime</h1>
+                                <p class="portfolio-modal__description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt5.jpg" alt="Boxes" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Проект Boxes</h1>
+                                <p class="portfolio-modal__description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Inspiration has no Borders</h1>
+                                <p class="portfolio-modal__description">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt7.jpg" alt="Limited Edition" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Издание Limited Edition</h1>
+                                <p class="portfolio-modal__description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt8.jpg" alt="Boxes" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Проект LAB</h1>
+                                <p class="portfolio-modal__description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-modal__item">
+                        <div class="portfolio-modal__overlay">
+                            <img src="./images-portfolio/img-opt9.jpg" alt="Growing Business" width="370" height="294">
+                            <div class="portfolio-modal__card">
+                            </div>
+                        </div>
+                        <div class="portfolio-modal__info">
+                            <h2 class="portfolio-modal__title">Growing Business</h1>
+                                <p class="portfolio-modal__description">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container container__conect">
+            <div class="footer-address">
+                <a href=" " class="logo link "><span class="logo_mark">Web</span>Studio</a>
+                <address class="list address-list ">
+                <p class="footer-address ">г. Киев, пр-т Леси Украинки, 26</p> 
+                <a href="mailto:info@devstudio.com " class="mail-footer link ">info@devstudio.com</a>
+                <a href="tel:+380961111111 " class="tel-footer link-footer link ">+38 096 111 11 11</a>    
+                </address>
+            </div>
+            <div class="conect">
+                <p class="conect-title">Присоединяйтесь</p>
+                <ul class="social-list list">
+                    <li class="social-list__item">
+                        <a href="" class="social-link-conect link">
+                            <svg class="social-conect" width="20px" height="20px">
+                                <use href="./image/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-link-conect link">
+                            <svg class="social-conect" width="20px" height="20px">
+                                <use href="./image/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-link-conect link">
+                            <svg class="social-conect" width="20px" height="20px">
+                                <use href="./image/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-end">
+                        <a href="" class="social-link-conect link">
+                            <svg class="social-conect" width="20px" height="20px">
+                                <use href="./image/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-footer">
+                <p class="form-title-footer">Подпишитесь на рассылку</p>
+                <form action="#" class="footer-form-modal">
+                    <input type="email" name="email" class="modal-footer-input" required placeholder="E-mail">
+                    <button type="submit" class="form-footer-btn">Подписаться
+                        <svg class="social-conect-icon" width="24px" height="24px">
+                            <use href="./image/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="popup is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="but-close">
+                <svg class="conect-close" width="11px" height="11px">
+                    <use href="./image/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form action="#" class="modal-form">
+                <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
+                <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-section">
+                        <input type="text" name="username" class="modal-form-input" required title="tex min 2 simbol">
+                        <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-username"></use>
+                        </svg>
+                    </span>                    
+                </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-section">
+                        <input type="tel" name="userphone" class="modal-form-input" required pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}" title="090-000-00-00">
+                        <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-userphone"></use>
+                        </svg>
+                    </span>                                       
+                </label>
+                <label class="modal-form-field">
+                    Почта
+                    <span class="modal-form-section">
+                        <input type="email" name="email" class="modal-form-input" required>
+                    <svg class="icon-input" width="12px" height="12px">
+                        <use href="./image/sprite.svg#icon-useremail"></use>
+                    </svg>
+                    </span>                                        
+                </label>
+                <label class="modal-form-field">
+                    Коментарий
+                   <textarea name="usermessage" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" id="user-term" name="agreement" class="agreement modal-form-term visually-hidden">
+                <label for="user-term" class="modal-form-check-desc"><span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span></label>
+                <button type="submit" class="form-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
+</body>
+
+</html>

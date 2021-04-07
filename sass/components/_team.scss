@@ -1,0 +1,10 @@
+.team {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.team-section {
+    padding-top: 102px;
+    padding-bottom: 94px;
+    background: var(--accen-team);
+}

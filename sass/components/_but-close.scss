@@ -1,0 +1,17 @@
+.but-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    color: var(--accent-color-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conect-close {
+    fill: var(--accent-color-black);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
