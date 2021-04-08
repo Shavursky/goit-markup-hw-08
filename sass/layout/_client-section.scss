@@ -3,3 +3,77 @@
     padding-bottom: 94px;
     background-color: var(--accent-color-white);
 }
+
+.client-list {
+    display: flex;
+}
+
+.client-list__item {
+    margin-right: 30px;
+}
+
+.client-list__link {
+    display: flex;
+    border: solid 1px #AFB1B8;
+    border-radius: 5px;
+    width: 170px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,
+    &:focus {
+        border: solid 1px var(--accent-color);
+    }
+    &:hover svg,
+    &:focus svg {
+        fill: var(--accent-color);
+    }
+}
+
+.yaco,
+.tagline,
+.company,
+.foster,
+.brand,
+.tag {
+    fill: var(--icon-grey);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.client-list {
+    display: flex;
+}
+
+.client-list__item {
+    margin-right: 30px;
+}
+
+.client-list__link {
+    display: flex;
+    border: solid 1px #AFB1B8;
+    border-radius: 5px;
+    width: 170px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,
+    &:focus {
+        border: solid 1px var(--accent-color);
+    }
+    &:hover svg,
+    &:focus svg {
+        fill: var(--accent-color);
+    }
+}
+
+.yaco,
+.tagline,
+.company,
+.foster,
+.brand,
+.tag {
+    fill: var(--icon-grey);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
