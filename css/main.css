@@ -63,9 +63,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,14 +78,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -676,8 +671,8 @@ body {
 }
 
 .header {
-  display: flex;
   background-color: #d8cece;
+  padding: 10px 15px;
 }
 
 .navigation {
