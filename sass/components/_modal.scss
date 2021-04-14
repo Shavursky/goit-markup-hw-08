@@ -2,8 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: var(--accent-color-white);
     transform: translate(-50%, -50%) scale(1);
@@ -176,6 +176,31 @@
     transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+// .hero__button {
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     color: var(--accent-color-white);
+//     background-color: var(--accent-color);
+//     cursor: pointer;
+//     display: block;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     border: 0;
+//     width: 200px;
+//     height: 50px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+//     &:hover,
+//     &:focus {
+//         background-color: var(--btn-blue);
+//         color: var(--accent-color-white);
+//     }
+// }
+//======Для мобильной версии==========
 .hero__button {
     font-weight: 700;
     font-size: 16px;
@@ -198,5 +223,13 @@
     &:focus {
         background-color: var(--btn-blue);
         color: var(--accent-color-white);
+    }
+}
+
+//===  Меню Modad для DESCTOP ===============
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
     }
 }

@@ -1,8 +1,8 @@
 .logo {
     font-family: var(--font-logo);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--accent-color-black);
     display: block;
@@ -14,4 +14,15 @@
 
 .footer-section .logo {
     color: var(--accent-color-white);
+}
+
+//===  Меню logo для планшетов tablet  ===============
+@media screen and (min-width: 768px) {}
+
+//===  Меню "HERO" для DESCTOP tablet  ===============
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }

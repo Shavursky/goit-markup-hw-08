@@ -1,7 +1,16 @@
 .conect {
-    margin-left: 86px;
+    display: block;
 }
 
+// .conect-title {
+//     text-transform: uppercase;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     color: var(--accent-color-white);
+//     margin-bottom: 21px;
+// }
 .conect-title {
     text-transform: uppercase;
     font-weight: 700;
@@ -9,7 +18,8 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--accent-color-white);
-    margin-bottom: 21px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .social-conect {
@@ -33,5 +43,21 @@
     &:hover .social-conect,
     &:focus .social-conect {
         fill: var(--accent-color-white);
+    }
+}
+
+//===  Меню conect для планшетов tablet  ===============
+@media screen and (min-width: 768px) {
+    .conect-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+}
+
+//===  Меню conect для Desctop  ===============
+@media screen and (min-width: 1200px) {
+    .conect {
+        margin-left: 70px;
     }
 }

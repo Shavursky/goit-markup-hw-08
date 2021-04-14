@@ -1,26 +1,77 @@
-// .footer-section {
-//     background-color: var(--color-grey);
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.footer-section {
+    background-color: var(--color-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 // .address-list {
 //     margin-top: 20px;
 // }
 // .footer-address {
+//     display: block;
 //     font-size: 14px;
 //     line-height: 1.71;
 //     letter-spacing: 0.03em;
 //     color: var(--accent-color-white);
 //     margin-bottom: 9px;
 // }
-// .mail-footer,
-// .link-footer {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     color: rgba(255, 255, 255, 0.6);
-//     display: block;
-// }
+.container-footer-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-white);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.mail-footer,
+.link-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+.mail-footer {
+    margin-bottom: 8px;
+}
+
 // .mail-footer {
 //     margin-bottom: 9px;
 // }
+.footer-section {
+    background-color: var(--color-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+//===  Меню Footer для планшетов tablet  ===============
+@media screen and (min-width: 768px) {
+    .container-footer-address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-address {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+//===  Меню Footer для Desctop  ===============
+@media screen and (min-width: 1200px) {
+    .conect {
+        margin-top: 20px;
+    }
+    .form-footer {
+        margin-top: 20px;
+    }
+}

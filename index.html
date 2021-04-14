@@ -45,15 +45,55 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="batton-burger">
+            <button type="button" class="batton-burger" data-menu-button>
                 <svg class="batton-burger__icon">
                     <use href="./image/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
         </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg class="menu-close-btn__icon">
+                    <use href="./image/sprite.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="menu-contacts-list list">
+                <li class="menu-contacts-list__item">
+                    <a class="menu-contacts-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="menu-contacts-list__item">
+                    <a class="menu-contacts-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="menu-social-list list">
+                <li class="menu-sicial-list__item">
+                    <a class="menu-social-list__item link" href="https://www.instagram.com/">Instagram</a>
+                </li>
+                <li class="menu-sicial-list__item">
+                    <a class="menu-social-list__item link" href="https://twitter.com/?lang=uk">Twitter</a>
+                </li>
+                <li class="menu-sicial-list__item">
+                    <a class="menu-social-list__item link" href="https://www.facebook.com/">Facebook</a>
+                </li>
+                <li class="menu-sicial-list__item menu-sicial-list__item__end">
+                    <a class="menu-social-list__item link" href="https://www.linkedin.com/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
             <button class="hero__button" data-modal-open type="button">Заказать услугу</button>
         </section>
@@ -104,15 +144,30 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="features list">
                     <li class="features__item">
-                        <img class="features__image" src="./image/img1.jpg" alt="work" width="370">
+                        <picture>
+                            <source srcset="./image/desctop/desctop.webp 1x, ./image/desctop/desctop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/desctop/desctop.jpg 1x, ./image/desctop/desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="features__image" src="./image/desctop/desctop.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="features__image" src="./image/img1.jpg" alt="work"> -->
                         <p class="overlay">Десктопные приложения</p>
                     </li>
                     <li class="features__item">
-                        <img class="features__image" src="./image/img2.jpg" alt="work" width="370">
+                        <picture>
+                            <source srcset="./image/desctop/disainer.webp 1x, ./image/desctop/disainer@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/desctop/disainer.jpg 1x, ./image/desctop/disainer@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="features__image" src="./image/desctop/disainer.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="features__image" src="./image/img2.jpg" alt="work"> -->
                         <p class="overlay">Мобильные приложения</p>
                     </li>
                     <li class="features__item">
-                        <img class="features__image" src="./image/img3.jpg" alt="work" width="370">
+                        <picture>
+                            <source srcset="./image/desctop/mobile.webp 1x, ./image/desctop/mobile@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/desctop/mobile.jpg 1x, ./image/desctop/mobile@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="features__image" src="./image/desctop/mobile.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="features__image" src="./image/img3.jpg" alt="work"> -->
                         <p class="overlay">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -123,7 +178,16 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team list">
                     <li class="team__item">
-                        <img class="team__img" src="./image/foto1.jpg" alt="Product Designer" width="270">
+                        <picture>
+                            <source srcset="./image/mobile/igormob.webp 1x, ./image/tablet/igormob@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./image/tablet/igortab.webp 1x, ./image/tablet/igortab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./image/desctop/igor.webp 1x, ./image/desctop/igor@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/mobile/igormob.jpg 1x, ./image/tablet/igormob@2x.jpg 2x" media="(min-width: 480px)">
+                            <source srcset="./image/tablet/igortab.jpg 1x, ./image/tablet/igortab@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/desctop/igor.jpg 1x, ./image/desctop/igor@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="team__img" src="./image/mobile/igormob.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="team__img" src="./image/foto1.jpg" alt="Product Designer"> -->
                         <div class="team-user">
                             <h3 class="about-title">Игорь Демьяненко</h3>
                             <p class="team-user__text">Product Designer</p>
@@ -160,7 +224,16 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./image/foto2.jpg" alt="Frontend Developer" width="270">
+                        <picture>
+                            <source srcset="./image/mobile/olgamob.webp 1x, ./image/mobile/olgamob@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./image/tablet/olgatab.webp 1x, ./image/tablet/olgatab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./image/desctop/olga.webp 1x, ./image/desctop/olga@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/mobile/olgamob.jpg 1x, ./image/mobile/olgamob@2x.jpg 2x" media="(min-width: 480px)">
+                            <source srcset="./image/tablet/olgatab.jpg 1x, ./image/tablet/olgatab@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/desctop/olga.jpg 1x, ./image/desctop/olga@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="team__img" src="./image/mobile/igormob.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="team__img" src="./image/foto2.jpg" alt="Frontend Developer"> -->
                         <div class="team-user">
                             <h3 class="about-title">Ольга Репина</h3>
                             <p class="team-user__text">Frontend Developer</p>
@@ -198,7 +271,16 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./image/foto3.jpg" alt="Marketing" width="270">
+                        <picture>
+                            <source srcset="./image/mobile/nicmob.webp 1x, ./image/mobile/nicmob@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./image/tablet/nictab.webp 1x, ./image/tablet/nictab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./image/desctop/nic.webp 1x, ./image/desctop/nic@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/mobile/nicmob.jpg 1x, ./image/mobile/nicmob@2x.jpg 2x" media="(min-width: 480px)">
+                            <source srcset="./image/tablet/nictab.jpg 1x, ./image/tablet/nictab@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/desctop/nic.jpg 1x, ./image/desctop/nic@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="team__img" src="./image/mobile/nicmob.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="team__img" src="./image/foto3.jpg" alt="Marketing"> -->
                         <div class="team-user">
                             <h3 class="about-title">Николай Тарасов</h3>
                             <p class="team-user__text">Marketing</p>
@@ -235,7 +317,16 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./image/foto4.jpg" alt="UI Designer" width="270">
+                        <picture>
+                            <source srcset="./image/mobile/michalmob.webp 1x, ./image/mobile/michalmob@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./image/tablet/michaltab.webp 1x, ./image/tablet/michaltab@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./image/desctop/michal.webp 1x, ./image/desctop/michal@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./image/mobile/michalmob.jpg 1x, ./image/mobile/michalmob@2x.jpg 2x" media="(min-width: 480px)">
+                            <source srcset="./image/tablet/michaltab.jpg 1x, ./image/tablet/michaltab@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/desctop/michal.jpg 1x, ./image/desctop/michal@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="team__img" src="./image/mobile/michalmob.jpg" alt="Проект LAB">
+                        </picture>
+                        <!-- <img class="team__img" src="./image/foto4.jpg" alt="UI Designer"> -->
                         <div class="team-user">
                             <h3 class="about-title">Михаил Ермаков</h3>
                             <p class="team-user__text">UI Designer</p>
@@ -322,51 +413,54 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <footer class="footer-section">
-        <!-- <div class="container container__conect">
-            <div class="footer-address">
-                <a href=" " class="logo link "><span class="logo_mark">Web</span>Studio</a>
-                <address class="list address-list ">
+        <div class="container container__conect">
+            <div class="container-footer-address">
+                <div class="footer-address">
+                    <a href=" " class="logo link "><span class="logo_mark">Web</span>Studio</a>
+                    <address class="list address-list ">
                 <p class="footer-address ">г. Киев, пр-т Леси Украинки, 26</p> 
                 <a href="mailto:info@devstudio.com " class="mail-footer link ">info@devstudio.com</a>
                 <a href="tel:+380961111111 " class="tel-footer link-footer link ">+38 096 111 11 11</a>    
                 </address>
-            </div>
-            <div class="conect">
-                <p class="conect-title">Присоединяйтесь</p>
-                <ul class="social-list list">
-                    <li class="social-list__item">
-                        <a href="" class="social-link-conect link">
-                            <svg class="social-conect" width="20px" height="20px">
+                </div>
+
+                <div class="conect">
+                    <p class="conect-title">Присоединяйтесь</p>
+                    <ul class="social-list list">
+                        <li class="social-list__item">
+                            <a href="" class="social-link-conect link">
+                                <svg class="social-conect" width="20px" height="20px">
                                 <use href="./image/sprite.svg#icon-instagram"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-link-conect link">
-                            <svg class="social-conect" width="20px" height="20px">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-link-conect link">
+                                <svg class="social-conect" width="20px" height="20px">
                                 <use href="./image/sprite.svg#icon-twitter"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-link-conect link">
-                            <svg class="social-conect" width="20px" height="20px">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-link-conect link">
+                                <svg class="social-conect" width="20px" height="20px">
                                 <use href="./image/sprite.svg#icon-facebook"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="social-list-end">
-                        <a href="" class="social-link-conect link">
-                            <svg class="social-conect" width="20px" height="20px">
+                            </a>
+                        </li>
+                        <li class="social-list-end">
+                            <a href="" class="social-link-conect link">
+                                <svg class="social-conect" width="20px" height="20px">
                                 <use href="./image/sprite.svg#icon-linkedin"></use>
                             </svg>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="form-footer">
                 <p class="form-title-footer">Подпишитесь на рассылку</p>
@@ -379,10 +473,9 @@
                     </button>
                 </form>
             </div>
-        </div> -->
+        </div>
     </footer>
-
-    <!-- <div class="popup is-hidden" data-modal>
+    <div class="popup is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="but-close">
                 <svg class="conect-close" width="11px" height="11px">
@@ -428,7 +521,8 @@
             </form>
         </div>
     </div>
-    <script src="./modal.js"></script> -->
+    <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
 </body>
 
 </html>

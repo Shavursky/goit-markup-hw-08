@@ -1,11 +1,31 @@
-.features {
-    display: flex;
-    padding-bottom: 86px;
-    margin-left: -30px;
-}
-
-.features__item {
-    margin-left: 30px;
-    width: 370px;
-    position: relative;
-}
+    .features-section {
+        display: none;
+    }
+    
+    //===  Меню Features для tablet  ===============
+    @media screen and (min-width: 768px) {}
+    
+    //===  Меню Features для DESCTOP ===============
+    @media screen and (min-width: 1200px) {
+        .features-section {
+            display: block;
+        }
+        .features-block {
+            display: block;
+        }
+        .features {
+            display: flex;
+            padding-bottom: 86px;
+        }
+        .features__item {
+            margin-right: 30px;
+            width: 370px;
+            position: relative;
+            &:last-child {
+                margin-right: -30px;
+            }
+        }
+        .features-section .container {
+            display: block;
+        }
+    }

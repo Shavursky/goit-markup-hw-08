@@ -1,20 +1,43 @@
+// .team {
+//     display: flex;
+//     flex-wrap: nowrap;
+// }
+.team-section .container {
+    display: block;
+}
+
 .team {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
 }
 
 .team-section {
     padding-top: 102px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background: var(--accen-team);
 }
 
+// .team__item {
+//     margin-right: 30px;
+//     width: 270px;
+//     background-color: var(--accent-color-white);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
 .team__item {
-    margin-left: 30px;
-    width: 270px;
+    margin-right: 30px;
+    width: 450px;
     background-color: var(--accent-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+}
+
+.team__item:last-child {
+    margin-right: 0;
+}
+
+.team__img {
+    width: 450px;
 }
 
 .team-user {
@@ -27,4 +50,35 @@
     color: var(--accent-color-grey);
     text-align: center;
     margin-bottom: 17px;
+}
+
+//===  Меню Features для tablet  ===============
+@media screen and (min-width: 768px) {
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team__item {
+        width: 354px;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    .team__img {
+        width: 354px;
+    }
+}
+
+//===  Меню Teams для DESCTOP ===============
+@media screen and (min-width: 1200px) {
+    .team .team__item {
+        width: 270px;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .team__img {
+        width: 270px;
+    }
 }

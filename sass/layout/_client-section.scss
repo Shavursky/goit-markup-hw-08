@@ -1,22 +1,72 @@
 .client-section {
-    padding-top: 101.41px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--accent-color-white);
 }
 
+.client-section .container {
+    display: block;
+}
+
+// .client-list {
+//     display: flex;
+// }
 .client-list {
     display: flex;
+    flex-wrap: wrap;
+}
+
+// .client-list__item {
+//     margin-right: 30px;
+// }
+// .client-list__link {
+//     display: flex;
+//     border: solid 1px #AFB1B8;
+//     border-radius: 5px;
+//     width: 210px;
+//     height: 90px;
+//     align-items: center;
+//     justify-content: center;
+//     transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+//     &:hover,
+//     &:focus {
+//         border: solid 1px var(--accent-color);
+//     }
+//     &:hover svg,
+//     &:focus svg {
+//         fill: var(--accent-color);
+//     }
+// }
+.yaco,
+.tagline,
+.company,
+.foster,
+.brand,
+.tag {
+    fill: var(--icon-grey);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .client-list__item {
     margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+    &:nth-child(n+4) {
+        margin-bottom: 0;
+    }
+}
+
+.client-section .section-title {
+    margin-bottom: 30px;
 }
 
 .client-list__link {
     display: flex;
     border: solid 1px #AFB1B8;
     border-radius: 5px;
-    width: 170px;
+    width: 210px;
     height: 90px;
     align-items: center;
     justify-content: center;
@@ -41,39 +91,34 @@
     transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.client-list {
-    display: flex;
-}
-
-.client-list__item {
-    margin-right: 30px;
-}
-
-.client-list__link {
-    display: flex;
-    border: solid 1px #AFB1B8;
-    border-radius: 5px;
-    width: 170px;
-    height: 90px;
-    align-items: center;
-    justify-content: center;
-    transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    &:hover,
-    &:focus {
-        border: solid 1px var(--accent-color);
+//===  Меню CLIENT для планшетов tablet  ===============
+@media screen and (min-width: 768px) {
+    .client-list .client-list__item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-child(n+3) {
+            margin-bottom: 0;
+        }
     }
-    &:hover svg,
-    &:focus svg {
-        fill: var(--accent-color);
+    .client-list__link {
+        width: 226px;
     }
 }
 
-.yaco,
-.tagline,
-.company,
-.foster,
-.brand,
-.tag {
-    fill: var(--icon-grey);
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+//===  Меню CLIENT для Desctop  ===============
+@media screen and (min-width: 1200px) {
+    .client-section {
+        padding-bottom: 94px;
+    }
+    .client-list .client-list__item {
+        &:nth-child(3n) {
+            margin-right: 30px;
+        }
+    }
+    .client-list__link {
+        width: 170px;
+    }
 }

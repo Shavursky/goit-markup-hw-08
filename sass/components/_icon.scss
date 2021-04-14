@@ -1,20 +1,34 @@
-/*----------ICON------------*/
-
-.contacts__icon-convert {
-    margin-right: 10.85px;
-    fill: #757575;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.contacts__tel:hover .contacts__icon-smartphone,
-.contacts__tel:focus .contacts__icon-smartphone,
-.contacts__mail:hover .contacts__icon-convert,
-.contacts__mail:focus .contacts__icon-convert {
-    fill: var(--accent-color);
-}
-
-.contacts__icon-smartphone {
-    margin-right: 10.46px;
-    fill: #757575;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
+        /*----------ICON------------*/
+        
+        .contacts__icon-convert {
+            margin-right: 10.85px;
+            fill: #757575;
+            transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        }
+        
+        .contacts__tel:hover .contacts__icon-smartphone,
+        .contacts__tel:focus .contacts__icon-smartphone,
+        .contacts__mail:hover .contacts__icon-convert,
+        .contacts__mail:focus .contacts__icon-convert {
+            fill: var(--accent-color);
+        }
+        
+        .contacts__icon-smartphone {
+            margin-right: 10.46px;
+            fill: #757575;
+            transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        }
+        
+        //===  Меню icon для планшетов tablet  ===============
+        @media screen and (min-width: 768px) {
+            .contacts__icon-convert {
+                width: 14px;
+                height: 10px;
+                margin-right: 7px;
+            }
+            .contacts__icon-smartphone {
+                width: 10px;
+                height: 14px;
+                margin-right: 8px;
+            }
+        }
