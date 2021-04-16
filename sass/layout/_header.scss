@@ -165,6 +165,7 @@
             height: 80px;
             padding-top: 0;
             padding-bottom: 0;
+            border: 1px solid #ECECEC;
         }
         .nav-header {
             display: flex;
@@ -223,6 +224,7 @@
         }
         .contacts__item {
             display: block;
+            margin-bottom: 10px;
         }
         .contacts__mail,
         .contacts__tel {
@@ -242,9 +244,6 @@
     
     //===  Меню хедера для DESCTOP ===============
     @media screen and (min-width: 1200px) {
-        .header {
-            border: 1px solid #ECECEC;
-        }
         .contacts {
             display: flex;
             margin-left: auto;
