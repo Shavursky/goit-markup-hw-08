@@ -47,13 +47,11 @@
 
 .advantages__item {
     display: block;
-    max-width: 480px;
     margin-bottom: 30px;
 }
 
 .advantages__group {
     display: flex;
-    max-width: 450px;
     height: 120px;
     background-color: #F5F4FA;
     justify-content: center;
@@ -95,9 +93,6 @@
         &:nth-child(n+2) {
             margin-bottom: 0;
         }
-    }
-    .advantages__group {
-        max-width: 354px;
     }
     .advantage__title {
         font-weight: 700;

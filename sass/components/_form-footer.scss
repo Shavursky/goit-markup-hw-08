@@ -17,7 +17,7 @@
     }
     
     .modal-footer-input {
-        width: 358px;
+        width: 93.75%;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
@@ -70,11 +70,15 @@
     }
     
     //===  Меню Form-footer для DESCTOP ===============
+    @media screen and (min-width: 768px) {}
+    
+    //===  Меню Form-footer для DESCTOP ===============
     @media screen and (min-width: 1200px) {
         .footer-form-modal {
             display: flex;
         }
         .modal-footer-input {
+            width: 358px;
             margin-bottom: 0;
             margin-right: 12px;
         }
