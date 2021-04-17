@@ -243,6 +243,12 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal-footer-input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form-modal {
     display: flex;
@@ -1128,6 +1134,9 @@ body {
   .contacts__item + .contacts__item {
     margin-left: 30px;
   }
+  .contacts__item {
+    margin-bottom: 0;
+  }
 }
 
 /*================section-heading==================*/
@@ -1256,9 +1265,10 @@ body {
   background: var(--accent-color-white);
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
-  width: 450px;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+.portfolio-modal__image {
+  width: 100%;
 }
 
 .portfolio-modal__overlay {
@@ -1266,10 +1276,6 @@ body {
   position: relative;
   overflow: hidden;
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.portfolio-modal__image {
-  width: 450px;
 }
 
 .portfolio-modal__card {
@@ -1317,6 +1323,7 @@ body {
 }
 
 .portfolio-modal__info {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1438,9 +1445,10 @@ body {
 @media screen and (min-width: 1200px) {
   .team .team__item {
     width: 270px;
+    margin-right: 30px;
   }
   .team .team__item:last-child {
-    margin-right: 0;
+    margin-right: -30px;
   }
   .team__img {
     width: 270px;
