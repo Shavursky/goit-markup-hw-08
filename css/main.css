@@ -1013,6 +1013,7 @@ body {
 
 .menu-social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-sicial-list__item {
