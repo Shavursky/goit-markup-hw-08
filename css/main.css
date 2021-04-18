@@ -956,7 +956,6 @@ body {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   padding: 48px 40px;
   background-color: var(--accent-color-white);
   transform: translateY(-100%) translateX(-50%);
