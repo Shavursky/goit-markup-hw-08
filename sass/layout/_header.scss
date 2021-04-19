@@ -68,9 +68,14 @@
     
     //========Меню для mobile=============
     .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: absolute;
         top: 0;
         left: 50%;
+        width: 100%;
+        height: 100%;
         padding: 48px 40px;
         background-color: var(--accent-color-white);
         transform: translateY(-100%) translateX(-50%);
@@ -87,7 +92,9 @@
     }
     
     .mobile-menu__list {
-        margin-bottom: 302px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .mobile-menu__link {
@@ -98,12 +105,18 @@
         color: var(--accent-color-black);
     }
     
+    .navigation__link_current {
+        color: var(--accent-color);
+    }
+    
     .mobile-menu__link:hover,
     .mobile-menu__link:focus {
         color: var(--accent-color);
     }
     
     .menu-contacts-list {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 64px;
     }
     
