@@ -1158,12 +1158,9 @@ body {
 .hero {
   background-color: #2F303A;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/heromob.jpg);
-  max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: auto;
-  margin-left: 0 auto;
 }
 
 .section-hero {
@@ -1192,8 +1189,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/herotab.jpg);
-    width: 100%;
-    background-size: 768px 400px;
   }
 }
 
@@ -1206,8 +1201,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/desctop/hero.jpg);
-    max-width: 1600px;
-    background-size: 1600px 600px;
   }
 }
 
