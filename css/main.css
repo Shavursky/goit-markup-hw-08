@@ -1166,6 +1166,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1600px;
 }
 
 .section-hero {
