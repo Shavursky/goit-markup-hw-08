@@ -2,7 +2,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 450px;
     height: 609px;
     padding: 40px;
     background-color: var(--accent-color-white);
@@ -223,6 +223,14 @@
     &:focus {
         background-color: var(--btn-blue);
         color: var(--accent-color-white);
+    }
+}
+
+//===  Меню Modad для Tablet ===============
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 450px;
+        height: 609px;
     }
 }
 

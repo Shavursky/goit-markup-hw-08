@@ -330,7 +330,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 450px;
   height: 609px;
   padding: 40px;
   background-color: var(--accent-color-white);
@@ -532,6 +532,13 @@ body {
 .hero__button:hover, .hero__button:focus {
   background-color: var(--btn-blue);
   color: var(--accent-color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
