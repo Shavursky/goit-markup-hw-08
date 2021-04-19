@@ -219,11 +219,11 @@
     margin-left: auto;
     margin-right: auto;
     transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    &:hover,
-    &:focus {
-        background-color: var(--btn-blue);
-        color: var(--accent-color-white);
-    }
+    // &:hover,
+    // &:focus {
+    //     background-color: var(--btn-blue);
+    //     color: var(--accent-color-white);
+    // }
 }
 
 //===  Меню Modad для Tablet ===============

@@ -529,11 +529,6 @@ body {
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.hero__button:hover, .hero__button:focus {
-  background-color: var(--btn-blue);
-  color: var(--accent-color-white);
-}
-
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
@@ -1223,6 +1218,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
