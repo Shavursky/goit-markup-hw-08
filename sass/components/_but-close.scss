@@ -4,11 +4,13 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    border-radius: 50% 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--accent-color-grey);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--accent-color-white);
 }
 
 .conect-close {
