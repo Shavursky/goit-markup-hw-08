@@ -909,6 +909,7 @@ body {
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .navigation {
@@ -1062,7 +1063,7 @@ body {
     height: 80px;
     padding-top: 0;
     padding-bottom: 0;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
   }
   .nav-header {
     display: flex;
